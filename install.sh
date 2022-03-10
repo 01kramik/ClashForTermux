@@ -21,11 +21,14 @@ pkg install whiptail
 echo -e $b"➤ "$w" successfully installing dependencies"
 cd $HOME/ClashForTermux
 sleep 2
+echo -e $b"➤ "$w" coppying yacd-dashbord: "$g"yacd"$w
 cp yacd-gh-pages.zip /data/data/com.termux/files/home/.config/clash
 sleep 2
+echo -e $b"➤ "$w" coppying config.yaml: "$g"config"$w
 cp config.yaml /data/data/com.termux/files/home/.config/clash
 sleep 2
 cd $HOME/.config/clash
+echo -e $b"➤ "$w" extracting yacd-dashbord: "$g"yacd"$w
 unzip yacd-gh-pages.zip >&/dev/null
 sleep 3
 rm -r -f yacd-gh-pages.zip >&/dev/null
@@ -33,4 +36,6 @@ sleep 2
 cd $HOME/ClashForTermux
 mv cft.sh $HOME >&/dev/null
 cd
+echo -e $b">"$W" setting config"
+micro $HOME/.config/clash/config.yaml >&/dev/null
 rm -r -f ClashForTermux >&/dev/null
