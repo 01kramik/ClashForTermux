@@ -7,7 +7,7 @@
 
 - git clone https://github.com/lycoxz/ClashForTermux
 
-- cd clash && bash install.sh
+- cd ClashForTermux && bash install.sh
 
 
 ### My Facebook
