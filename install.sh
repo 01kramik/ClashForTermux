@@ -34,4 +34,3 @@ cd $HOME/ClashForTermux
 mv cft.sh $HOME >&/dev/null
 cd
 rm -r -f ClashForTermux >&/dev/null
-clear
