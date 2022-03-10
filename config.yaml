@@ -1,0 +1,62 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+port: 7893
+tproxy-port: 7895
+mode: global
+log-level: info
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret : ""
+bind-address: "*"
+external-ui: yacd-gh-pages
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 127.0.0.1:7894
+  use-hosts: true
+  nameserver:
+    - https://cloudflare-dns.com/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+  fallback:
+    - https://dns.google/dns-query
+
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
+profile:
+  store-selected: true
+  store-fakeip: true
+
+proxies:
+  - name: Vmess_Server
+    server: HOST_SERVER
+    port: 443
+    type: vmess
+    uuid: 
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vvip
+      headers:
+        Host: BUG_SNI
+
+proxy-groups:
+ - name: SERVER
+   type: load-balance
+   strategy: consistent-hashing
+   disable-udp: false
+   proxies:
+      - Vmess_Server
+   url: http://www.gstatic.com/generate_204
+   interval: '300'
+  
+rules:
+  - MATCH,SERVER
