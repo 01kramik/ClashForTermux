@@ -31,4 +31,5 @@ rm -r -f yacd-gh-pages.zip
 sleep 2
 cd
 rm -r -f ClashForTermux
+clash
 clear
