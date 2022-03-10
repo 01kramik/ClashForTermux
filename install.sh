@@ -29,13 +29,13 @@ cd $HOME/ClashForTermux
 sleep 2
 
 echo -e $b"➤ "$w" coppying yacd-dashbord: "$g"yacd"$w
-cp -f yacd-gh-pages.zip $HOME/.config/clash
+cp -r -f yacd-gh-pages.zip $HOME/.config/clash
 echo ""
 
 sleep 2
 
 echo -e $b"➤ "$w" coppying config.yaml: "$g"config"$w
-cp -f config.yaml $HOME/.config/clash
+cp -r -f config.yaml $HOME/.config/clash
 echo ""
 
 sleep 2
