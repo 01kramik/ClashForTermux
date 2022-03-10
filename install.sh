@@ -33,3 +33,4 @@ cd
 rm -r -f ClashForTermux
 clash
 clear
+cd
