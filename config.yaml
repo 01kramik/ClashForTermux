@@ -1,8 +1,8 @@
 mixed-port: 7890
 socks-port: 7891
-redir-port: 7892
-port: 7893
-tproxy-port: 7895
+#redir-port: 7892
+#port: 7893
+#tproxy-port: 7895
 mode: global
 log-level: info
 allow-lan: true
@@ -37,7 +37,7 @@ proxies:
     server: HOST_SERVER
     port: 443
     type: vmess
-    uuid: 
+    uuid: ISI_UUID
     alterId: 0
     cipher: auto
     tls: true
