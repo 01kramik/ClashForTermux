@@ -69,4 +69,4 @@ proxy-groups:
    interval: '300'
   
 rules:
-  - MATCH,SERVER
+  - MATCH,GLOBAL
