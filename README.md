@@ -1,14 +1,14 @@
 # Clash For Termux Without Root
 
 # Tampilan
-[![Muhammad Quillen](https://i.ibb.co/9ckxPFK/275280701-1017928129071608-6754365807402039988-n.jpg)](https://www.facebook.com/LyCoXyZ/) 
+[![ZEROSSL](https://i.ibb.co/9ckxPFK/275280701-1017928129071608-6754365807402039988-n.jpg)](https://t.me/zerossl/) 
 
 # Install
 - pkg update  
 
 - pkg install git
 
-- git clone https://github.com/lycoxz/ClashForTermux
+- git clone https://github.com/zerossl/ClashForTermux
 
 - cd ClashForTermux && bash install.sh
 
@@ -54,7 +54,3 @@
 - Proxy : 127.0.0.1
 - Port : 7890, yang dimana port berasal dari config.yaml yang bernama mixed-port
 
-# Contact Me
-- Bila masih bingung bisa di tanyakan 
-- Facebook : https://www.facebook.com/LyCoXyZ
-- Whatsapp : https://wa.me/083195323183
