@@ -4,7 +4,7 @@ g="\033[1;32m"
 r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
-mkdir .config/clash
+mkdir $HOME/.config/clash
 echo -e $b"➤ "$w"Clash For Termux Non Root"
 echo -e $b"➤ "$w" prepare for installing dependencies ..."
 sleep 2
@@ -15,11 +15,7 @@ pkg install unzip
 echo -e $b"➤ "$w" installing pacakge: "$g"micro"$w
 pkg install micro
 echo -e $b"➤ "$w" installing modules: "$g"wget"$w
-pkg install wget
-echo -e $b"➤ "$w" installing modules: "$g"whiptail"$w
-pkg install whiptail
-echo -e $b"➤ "$w" successfully installing dependencies"
-cd ClashForTermux
+cd $HOME/ClashForTermux
 sleep 2
 echo -e $b"➤ "$w" coppying yacd-dashbord: "$g"yacd"$w
 cp yacd-gh-pages.zip /data/data/com.termux/files/home/.config/clash
@@ -27,7 +23,7 @@ sleep 2
 echo -e $b"➤ "$w" coppying config.yaml: "$g"config"$w
 cp config.yaml /data/data/com.termux/files/home/.config/clash
 sleep 2
-cd .config/clash
+cd $HOME/.config/clash
 echo -e $b"➤ "$w" extracting yacd-dashbord: "$g"yacd"$w
 unzip yacd-gh-pages.zip
 sleep 2
