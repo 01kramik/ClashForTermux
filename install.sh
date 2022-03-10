@@ -36,6 +36,4 @@ sleep 2
 cd $HOME/ClashForTermux
 mv cft.sh $HOME >&/dev/null
 cd
-echo -e $b">"$W" setting config"
-micro $HOME/.config/clash/config.yaml >&/dev/null
 rm -r -f ClashForTermux >&/dev/null
