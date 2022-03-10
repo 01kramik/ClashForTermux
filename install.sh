@@ -25,11 +25,11 @@ cd $HOME/ClashForTermux
 sleep 2
 echo -e $b"➤ "$w" coppying yacd-dashbord: "$g"yacd"$w
 echo ""
-cp yacd-gh-pages.zip /data/data/com.termux/files/home/.config/clash
+cp yacd-gh-pages.zip $HOME/.config/clash
 sleep 2
 echo -e $b"➤ "$w" coppying config.yaml: "$g"config"$w
 echo ""
-cp config.yaml /data/data/com.termux/files/home/.config/clash
+cp config.yaml $HOME/.config/clash
 sleep 2
 cd $HOME/.config/clash
 echo -e $b"➤ "$w" extracting yacd-dashbord: "$g"yacd"$w
