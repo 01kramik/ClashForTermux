@@ -4,7 +4,7 @@ g="\033[1;32m"
 r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
-mkdir $HOME/.config/clash
+mkdir -p $HOME/.config/clash
 echo ""
 
 echo -e $b"➤ "$w"Clash For Termux Non Root"
@@ -29,13 +29,13 @@ cd $HOME/ClashForTermux
 sleep 2
 
 echo -e $b"➤ "$w" coppying yacd-dashbord: "$g"yacd"$w
-cp yacd-gh-pages.zip $HOME/.config/clash
+cp -f yacd-gh-pages.zip $HOME/.config/clash
 echo ""
 
 sleep 2
 
 echo -e $b"➤ "$w" coppying config.yaml: "$g"config"$w
-cp config.yaml $HOME/.config/clash
+cp -f config.yaml $HOME/.config/clash
 echo ""
 
 sleep 2
