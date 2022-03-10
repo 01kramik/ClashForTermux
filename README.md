@@ -14,7 +14,7 @@
 
 # Edit Config.yaml
 - Format Protocol V2Ray
-- - name: "Vmess_Server"
+-   name: "Vmess_Server"
 -   server: HOST_SERVER
 -   port: 443
 -   type: vmess
@@ -29,7 +29,7 @@
 -     headers:
 -       Host: BUG_SNI
 
-- - name: "Trojan_Server"
+-   name: "Trojan_Server"
 -   type: trojan
 -   server: HOST_SERVER
 -   port: 443
