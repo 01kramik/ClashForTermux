@@ -4,13 +4,17 @@
 [![Muhammad Quillen](https://i.ibb.co/9ckxPFK/275280701-1017928129071608-6754365807402039988-n.jpg)](https://www.facebook.com/LyCoXyZ/) 
 
 # Install
-- pkg update  
+- apt update && apt install upgrade -y
 
-- pkg install git
+- apt install git -y
 
 - git clone https://github.com/lycoxz/ClashForTermux
 
 - cd ClashForTermux && bash install.sh
+
+- cd
+
+- micro .config/clash/config.yaml
 
 # Edit Config.yaml
 - Format Protocol V2Ray
