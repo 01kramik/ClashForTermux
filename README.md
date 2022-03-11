@@ -14,8 +14,6 @@
 
 - cd
 
-- micro .config/clash/config.yaml
-
 # Edit vmess.yaml
 - ketik micro .config/clash/vmess.yaml
 
