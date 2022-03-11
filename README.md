@@ -18,6 +18,9 @@
 
 # Edit Config.yaml
 - Format Protocol V2Ray
+-
+- ketik micro .config/clash/vmess.yaml
+- 
 -   name: "Vmess_Server"
 -   server: HOST_SERVER
 -   port: 443
@@ -32,7 +35,9 @@
 -     path: /vvip
 -     headers:
 -       Host: BUG_SNI
-
+-
+- ketik micro .config/clash/trojan.yaml
+- 
 -   name: "Trojan_Server"
 -   type: trojan
 -   server: HOST_SERVER
@@ -45,8 +50,15 @@
 # Running Clash
 - Sebelum di running dahulukan lah, edit condif
 - Command :
-- micro .config/clash/config.yaml
-
+- 
+- vmess
+- micro .config/clash/vmess.yaml
+- 
+- trojan
+- micro .config/clash/trojan.yaml
+-
+- tergantung kepunyaan paket sc maupun server
+- 
 # Open Yacd-Dashboard
 - Buka Chrome
 - http://127.0.0.1:9090/ui/#/proxies
@@ -56,7 +68,7 @@
 - masuk ke Access Point Names (APN)
 - APN : Bebas (Reccomended : internet)
 - Proxy : 127.0.0.1
-- Port : 7890, yang dimana port berasal dari config.yaml yang bernama mixed-port
+- Port : 7890
 
 # Contact Me
 - Bila masih bingung bisa di tanyakan 
