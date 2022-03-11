@@ -33,7 +33,7 @@
 -     path: /vvip
 -     headers:
 -       Host: BUG_SNI
--       
+    
 # Edit trojan.yaml
 - ketik micro .config/clash/trojan.yaml
 
