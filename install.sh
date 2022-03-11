@@ -34,6 +34,18 @@ echo ""
 
 sleep 2
 
+echo -e $b"➤ "$w" coppying vmess.yaml: "$g"vmess"$w
+cp -r -f vmess.yaml $HOME/.config/clash
+echo ""
+
+sleep 2
+
+echo -e $b"➤ "$w" coppying trojan.yaml: "$g"trojan"$w
+cp -r -f trojan.yaml $HOME/.config/clash
+echo ""
+
+sleep 2
+
 echo -e $b"➤ "$w" coppying config.yaml: "$g"config"$w
 cp -r -f config.yaml $HOME/.config/clash
 echo ""
