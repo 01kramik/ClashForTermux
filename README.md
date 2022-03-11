@@ -45,7 +45,7 @@
 -   skip-cert-verify: true
     
 # Running Clash
-- Sebelum di running dahulukan lah, edit condif
+- Sebelum di running dahulukan lah, edit config
 - Command :
 
 - vmess
