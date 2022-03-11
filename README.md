@@ -16,9 +16,7 @@
 
 - micro .config/clash/config.yaml
 
-# Edit Config.yaml
-- Format Protocol V2Ray
-
+# Edit vmess.yaml
 - ketik micro .config/clash/vmess.yaml
 
 -   name: "Vmess_Server"
@@ -35,7 +33,8 @@
 -     path: /vvip
 -     headers:
 -       Host: BUG_SNI
-
+-       
+# Edit trojan.yaml
 - ketik micro .config/clash/trojan.yaml
 
 -   name: "Trojan_Server"
